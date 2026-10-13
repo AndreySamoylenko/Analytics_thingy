@@ -1,7 +1,7 @@
 class User:
-    user_id: int
-    phone_number: int
+    id: int
     name: str
+    phone_number: int
     is_corporate: bool
 
 
@@ -19,6 +19,7 @@ class CourierStatus:
     FIRED = "fired"
 
 class Courier:
-    courier_id: int
-    full_name: str
+    id: int
+    name: str
     travel_type: TravelType
+    staus: CourierStatus
